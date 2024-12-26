@@ -7,7 +7,7 @@ header{
  background-color: #e9e52c;
 }
 nav{
-    background-color: #042d09;
+    background-color: #000000;
     padding: 1px;
     margin-top: 0%;
 }
@@ -27,8 +27,6 @@ li{
  margin-left:10% ;
  padding:30px;
  font-size: 120%;
- color:rgb(248, 252, 248);
-
 }
 h1{
     color:rgb(248, 252, 248);
@@ -45,5 +43,5 @@ img{
     align-self: center;
 }
 a{
-    color: black;
+    color: rgb(255, 255, 255);
 }
