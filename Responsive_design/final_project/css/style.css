@@ -83,7 +83,7 @@ div {
 
 @media (prefers-color-scheme:dark) {
     body {
-        background-color: black;
+        background-color: rgb(30, 29, 29);
     }
 
     header,
