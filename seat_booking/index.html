@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>THEATER</h1>
+    </header>
+    <main>
+        <div id="select">
+            <div class="grid">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="grid">
+                <label for="time"> Time  </label>
+                <select id="time" name="time">
+                    <option value="10:00 am - 1:00 pm">
+                        10:00 am - 1:00 pm
+                    </option>
+                    <option value="10:00 am - 1:00 pm">
+                        2:00 pm - 5:00 pm
+                    </option>
+                    <option value="10:00 am - 1:00 pm">
+                        6:00 pm - 9:00 pm
+                    </option>
+                </select>
+            </div>
+            <div class="grid">
+                <label for="movie"> Movie </label>
+                <select id="movie" name="movie">
+                    <option value="RRR">RRR</option>
+                    <option value="Yevadu">Yevadu</option>
+                    <option value="Rebel">Rebel</option>
+                </select>
+            </div>
+        </div>
+        <div id="screen"> Screen </div>
+           
+        <section id="container">
+            <div class="row">
+                 <div  class="seat seat_available"  ></div>
+                <div class="seat seat_unavailable aisle" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available"></div>
+                <div class="seat seat_unavailable"  ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div> </div>
+            <div class="row">
+                 <div  class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available"></div>
+                <div class="seat seat_available"  ></div>
+                <div class="seat seat_unavailable aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div></div>
+            <div class="row">
+                 <div  class="seat seat_unavailable"  ></div>
+                <div class="seat seat_available aisle" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available"></div>
+                <div class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_unavailable aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div></div>
+            <div class="row">
+               <div  class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available"></div>
+                <div class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_unavailable aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>  </div>
+            <div class="row">
+                <div  class="seat seat_available"  ></div>
+                <div class="seat seat_unavailable aisle" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_unavailable"></div>
+                <div class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available" ></div> </div>
+            <div class="row">
+                 <div  class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available"></div>
+                <div class="seat seat_available"  ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available" ></div>
+                <div class="seat seat_available aisle " ></div>
+                <div class="seat seat_unavailable" ></div>
+                <div class="seat seat_available" ></div></section>
+        <div >
+            <div class="info">
+            <div class=" seat_available"></div> <p> Available</p>
+          </div>
+          <div class="info"> 
+           <div class=" seat_unavailable"></div><p>Unavailable</p>
+         </div>   
+         <div class="info"><div class="seat_selected"></div><p>Selected    </p> </div>
+  </div> 
+  <section id="detail">
+  <div> Total Seat Selected  : 
+
+   </div>
+   <div>
+    Total Cost :
+   </div>
+   </section>
+   <div id="button"> <button> Pay Now</button></div>
+   </div>
+        </main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
